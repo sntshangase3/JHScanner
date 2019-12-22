@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+	xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@color/colorWhite"
+	>
+
+	<LinearLayout	
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_vertical">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginTop="10dp"
+			android:id="@+id/description"
+			android:typeface="sans"
+			android:textSize="20sp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textColor="@color/colorWhite"
+			android:background="@drawable/button_bground_profile_premium"
+			/>
+
+		<EditText
+			android:layout_height="50dp"
+			android:layout_width="match_parent"
+			android:layout_margin="5dp"
+			android:textColor="#5d5d5d"
+			android:textAlignment="center"
+		android:inputType="number"
+			android:background="@drawable/edittext_bground"
+			android:padding="5dp"
+			android:hint="Enter Quantity"
+			android:id="@+id/edtquantity" />
+		<Spinner
+			android:id="@+id/spinnerreason"
+			android:layout_height="50dp"
+			android:layout_width="fill_parent"
+			android:layout_margin="5dp"
+			android:layout_marginTop="1dp"
+			android:textAlignment="center"
+			android:gravity="center"
+			android:textColor="#5d5d5d"
+			android:background="@drawable/edittext_bground"
+			android:padding="15dp"
+			/>
+
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="2">
+
+		<Button
+			android:id="@+id/confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:text="Confirm"
+			android:background="@drawable/button_bground"
+			android:textColor="#009111"
+
+			/>
+		<Button
+			android:id="@+id/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:text="Cancel"
+			android:background="@drawable/button_bground"
+			android:textColor="#009111"
+
+			/>
+	</LinearLayout>
+
+
+
+
+	</LinearLayout>
+</ScrollView>

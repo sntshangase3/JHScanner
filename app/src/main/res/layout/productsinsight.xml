@@ -1,0 +1,375 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/layoutaddproduct"
+    android:orientation="vertical"
+   >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Insight-2019"
+        android:layout_marginTop="1dp"
+        android:typeface="sans"
+        android:textSize="30dp"
+        android:textColor="@color/colorGreen"
+        android:gravity="center" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/productimage"
+                android:src="@drawable/profilephoto"
+
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Warning: "
+        android:textColor="@color/colorRed"
+
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Waste level is "
+            android:textColor="@color/colorBlack"
+
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/txtwastelevelpercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14%"
+            android:textColor="@color/colorRed"
+
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="estimated National Waste level is about 5%. Make wise purchase"
+            android:textColor="@color/colorBlack"
+
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/txtquantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Q:34"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtweight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="W:56kg"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_weight="8"
+            />
+        <TextView
+            android:id="@+id/txtvalue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="V:R450"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_weight="10"
+            />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            android:text="100%"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_weight="10"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+android:layout_margin="1dp"
+        >
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Current Inventory"
+            android:layout_weight="30"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtvalueinventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="R100"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="15"
+            />
+        <TextView
+            android:id="@+id/txtpercentinventory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="22%"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="10"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Consumption"
+
+            android:layout_weight="30"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtvalueconsumption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="R100"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="15"
+            />
+        <TextView
+            android:id="@+id/txtpercentconsumption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="64%"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="10"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Donation"
+
+            android:layout_weight="30"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtvaluedonation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="R100"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="15"
+            />
+        <TextView
+            android:id="@+id/txtpercentdonation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="10"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorWhite"
+        android:layout_gravity="center"
+
+        >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Waste"
+            android:layout_weight="30"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtvaluewaste"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="R100"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="15"
+            />
+        <TextView
+            android:id="@+id/txtpercentwaste"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="14%"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2dp"
+            android:layout_weight="10"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_select_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:src="@drawable/select" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+             android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/txt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+android:clickable="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+             android:text="Cancel"/>
+    </LinearLayout>
+
+
+</LinearLayout>

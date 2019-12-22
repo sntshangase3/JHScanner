@@ -1,0 +1,29 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:id="@+id/lblproductimage"
+            android:src="@drawable/blackproduct"
+android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Koo beans"
+            android:id="@+id/lblname"
+             android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+
+
+</LinearLayout>

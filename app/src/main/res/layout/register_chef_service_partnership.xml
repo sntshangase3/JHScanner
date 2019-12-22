@@ -1,0 +1,736 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+     >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="  Free "
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textSize="15sp"
+
+            android:textColor="@color/colorRed"
+            android:background="@color/colorPrimary"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Chef Listing  "
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textSize="15sp"
+
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtseehow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text=" Premium Listing"
+            android:textColor="@color/colorGray"
+         />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/chkpremium" />
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/layout_prem"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=""
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"
+                 android:textAlignment="center"
+                    android:padding="5dp"
+                    android:editable="false"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/edtpremiumstatus" />
+
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Your Name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+          android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtname" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#5d5d5d"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtuserid" />
+
+    </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Street/Road"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:gravity="top|left"
+                    android:layout_marginTop="1dp"
+                    android:hint="e.g. 27 Limoniet St/Rd"
+                    android:id="@+id/edtstreet" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Suburb"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:gravity="top|left"
+                    android:layout_marginTop="1dp"
+                    android:hint="e.g. Croydon"
+                    android:id="@+id/edtsuburb" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="City/Town"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:gravity="top|left"
+                    android:layout_marginTop="1dp"
+                    android:hint="e.g. Kempton Park"
+                    android:id="@+id/edtcity" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Postal Code"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:gravity="top|left"
+                    android:layout_marginTop="1dp"
+                    android:hint="e.g. 1619"
+                    android:id="@+id/edtpostalcode" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:gravity="top|left"
+            android:visibility="gone"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtaddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Telephone"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+          android:inputType="number"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edttelephone" />
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Website"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:hint="e.g. www.kfc.co.za"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/edtwebsite" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="About you"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:hint="About yourself"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/edtaboutyou" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="100dp"
+                    android:text="Tick Services you're offering"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="45dp"
+                        android:padding="5dp"
+                        android:text="Cooked Meal Orders" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:id="@+id/chkcookmealorders" />
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Meal Kit Orders"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:id="@+id/chkmealkitorders" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Catering services"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:id="@+id/chkcateringservices" />
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Recipe designs"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:id="@+id/chkrecipedesigns" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Private Chef Service"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="1dp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:id="@+id/chkprivatechefservices" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+               android:layout_gravity="center"
+                    android:text="Note: Free Listing 10 Dish maximum,Premium listing unlimited."
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Dish Name "
+                    />
+                <EditText
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/edtnamedish" />
+                <TextView
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=" Image"
+                    />
+                <ImageView
+                    android:id="@+id/dishprofileImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/profile_bg_rounded_corners"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profilephoto" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Key Ingredients"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:gravity="top|left"
+                    android:hint="@string/ingredients"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/edtkeyingredients" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Recipe"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:inputType="textMultiLine"
+                    android:layout_marginTop="1dp"
+                    android:gravity="top|left"
+                    android:hint="@string/recipe"
+                    android:textStyle="italic"
+
+                    android:id="@+id/edtrecipe" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                     android:src="@drawable/prep_time"
+                    />
+                <EditText
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+
+                    android:hint="e.g. 30-45 Min"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/edtpreptime" />
+                <TextView
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text=" Cost"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:background="@drawable/edittext_bground"
+                    android:padding="5dp"
+                    android:hint="e.g. R125"
+                    android:textStyle="italic"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/edtcost" />
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:layout_gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_addish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:src="@drawable/adddish"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/dishlist"
+                >
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:visibility="gone"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Item"
+                        android:gravity="center"
+                        android:layout_weight="10"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="10"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="KEY"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="15"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:text="Recipe"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="15"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <ListView
+
+                        android:id="@+id/lstdish"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/colorWhite"
+                        android:padding="1dp"
+                        android:dividerHeight="4dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        >
+                    </ListView>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+
+                        android:background="@drawable/status_dish_notice_home"
+                        android:id="@+id/txtdishnumber"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/b2"
+                        android:src="@drawable/dish"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bground"
+            android:textColor="#009111"
+            android:layout_margin="2dp"
+            android:padding="7dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/btn_signup"
+            android:text="Sign Up" />
+
+                <ImageButton
+                    android:id="@+id/btn_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:padding="7dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/accept"
+                    android:background="@drawable/button_bground"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bground"
+                    android:textColor="#009111"
+                    android:layout_margin="2dp"
+                    android:padding="7dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/btn_delete"
+                    android:text="Delete" />
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

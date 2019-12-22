@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="@color/colorPrimary" />
+    <EditText android:id="@+id/etFrom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5d5d5d"
+        android:padding="5dp"
+        android:hint="Enter your email address"
+        android:background="@drawable/edittext_bground"
+        android:inputType="text" />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:textColor="@color/colorPrimary" />
+    <EditText android:id="@+id/etSubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5d5d5d"
+        android:padding="5dp"
+        android:background="@drawable/edittext_bground"
+        android:inputType="text" />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:textColor="@color/colorPrimary" />
+    <EditText android:id="@+id/etMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:padding="5dp"
+        android:textColor="#5d5d5d"
+        android:background="@drawable/edittext_bground" />
+    <Button android:id="@+id/btnOK"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:text="SEND"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+android:layout_gravity="center"
+        android:text="Connect with us on"
+        android:textSize="20dp"
+        android:textStyle="bold"
+      />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="1dp"
+        >
+        <ImageView
+            android:id="@+id/fbook"
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:src="@drawable/facebook"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:src="@drawable/twitter"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1" />
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:src="@drawable/instagram"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1" />
+        <ImageView
+            android:id="@+id/web"
+            android:layout_width="@dimen/large_brush"
+            android:layout_height="@dimen/large_brush"
+            android:src="@drawable/website"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:layout_gravity="center"
+        android:text="Gauteng - Croydon Kempton Park"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:layout_gravity="center"
+        android:text="GoingDots a platform of"
+
+        />
+    <TextView
+           android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:layout_gravity="center"
+        android:text="J.H. Ngobeni Digicomm (Pty)Ltd"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        android:textColor="#454545"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:text="Powered by Sqalo IT Solutions" />
+
+
+
+</LinearLayout>

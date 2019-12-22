@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/homepage"
+        android:background="#ffffff"
+
+        >
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/btndescription4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/previous"
+                    android:layout_height="match_parent"
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/previous"
+                    />
+                <ImageView
+                    android:id="@+id/chefprofileImage"
+                    android:layout_width="80dp"
+                     android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="115dp"
+                    />
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_height="match_parent"
+                    android:layout_width="40dp"
+                    android:src="@drawable/next"
+                    android:layout_marginLeft="200dp"
+                    />
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/chefhat1"
+                    android:layout_marginLeft="260dp"
+                    android:id="@+id/btn_signupi"
+                    />
+
+                <TextView
+                    android:id="@+id/btn_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorRed"
+                    android:text="Signup"
+                    android:gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="265dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <Spinner
+                android:id="@+id/spinnercategory"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:typeface="sans"
+                android:id="@+id/txtname"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtstorelocation"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdistance"
+                android:typeface="sans"
+                android:textSize="15sp"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginLeft="25dp"
+
+                android:layout_weight="1"
+                android:background="@drawable/status_dish_notice_home"
+                android:id="@+id/txtdishnumber"
+
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:id="@+id/b2"
+                android:src="@drawable/dish"
+                android:layout_marginLeft="40dp"
+                />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="160dp"
+                android:id="@+id/b3"
+                android:src="@drawable/callno"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="40dp"
+                android:id="@+id/b4"
+                android:src="@drawable/website"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:text="About Me"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                    android:gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:textSize="15sp"
+                android:id="@+id/txtabout"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:background="@color/colorPrimary"
+   >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:textSize="19sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+         android:text="Tap Chef's Hat For Services"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:id="@+id/service"
+            android:src="@drawable/chefhat2"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/lblproimage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblwastevalue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/lblproimage" />
+    <TextView
+        android:id="@+id/lblexpirationc"
+        android:layout_below="@id/lblwastevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblexpire"
+        android:text=" Expiration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblwastevalue"
+        android:layout_toEndOf="@+id/lblexpirationc" />
+
+    <TextView
+        android:id="@+id/lblspoilagec"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblexpirationc"
+        android:layout_toRightOf="@+id/lblexpirationc"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblspoil"
+        android:text=" Spoilage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblexpire"
+        android:layout_toEndOf="@+id/lblspoilagec" />
+    <TextView
+        android:id="@+id/lblpreparationc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblspoilagec"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblprepare"
+        android:text=" Preparation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblspoil"
+        android:layout_toEndOf="@+id/lblpreparationc" />
+    <TextView
+        android:id="@+id/lblcookedc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblpreparationc"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblcook"
+        android:text=" Cooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblprepare"
+        android:layout_toEndOf="@+id/lblcookedc" />
+    <TextView
+        android:id="@+id/lblqualityc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblcookedc"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblquality"
+        android:text=" Quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblcook"
+        android:layout_toEndOf="@+id/lblqualityc" />
+    <TextView
+        android:id="@+id/lblusedc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblqualityc"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblused"
+        android:text=" Used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblquality"
+        android:layout_toEndOf="@+id/lblusedc" />
+
+</RelativeLayout>

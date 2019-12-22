@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:scaleType="centerCrop"
+    android:id="@+id/homepage"
+    android:background="@color/colorWhite"
+
+    >
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/btndescription4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+    >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grocery Insights"
+                android:layout_marginTop="1dp"
+                android:typeface="sans"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
+                android:gravity="center" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Know your Grocery Consumption &amp; Spending."
+        android:layout_marginTop="1dp"
+        android:typeface="sans"
+
+        android:textSize="20sp"
+        android:textColor="@color/colorGreen"
+        android:gravity="center" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+             android:weightSum="2">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:id="@+id/b1"
+            android:src="@drawable/cosumption"
+           />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+             android:id="@+id/b2"
+            android:src="@drawable/waste"
+
+             />
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:text="Yearly Consumption"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="Yearly Grocery Waste"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/txt1"
+                android:typeface="sans"
+                android:textColor="@color/colorGray"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="140sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/txt2"
+                android:typeface="sans"
+                android:textColor="@color/colorGray"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:id="@+id/b3"
+                    android:src="@drawable/monthspending"
+                    />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:id="@+id/b4"
+                    android:src="@drawable/yearlyspending"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="This Month Spending"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yearly Spending"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/txt3"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/txt4"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:id="@+id/b5"
+                    android:src="@drawable/logootherretailers"
+                    />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:id="@+id/b6"
+                    android:src="@drawable/yearlydonation"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shopping Savvy"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="70sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yearly Donation"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="#FFA500"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="1dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/status_expire_notice_home"
+                    android:id="@+id/txtnotice1"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/txt5"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/txt6"
+                    android:typeface="sans"
+                    android:textColor="@color/colorGray"
+                    android:textAlignment="center"
+                    />
+
+
+            </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

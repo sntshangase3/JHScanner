@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:id="@+id/lblproductimage"
+            android:src="@drawable/dish"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Dish 1"
+            android:id="@+id/lblname"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:visibility="gone"
+            android:layout_margin="2dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="ingred1,ingre2,ingr3,ingr3"
+            android:id="@+id/lblkeyingredient"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_margin="2dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="rec1,rec2,rec3"
+            android:id="@+id/lblrecipe"
+            android:visibility="gone"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_margin="2dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

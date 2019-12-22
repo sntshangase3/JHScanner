@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.example.sqalo.jhscanner"
+    android:installLocation="auto">
+
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"   />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+       <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="true" />
+
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logos"
+        android:label="@string/createproject"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+                >
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name="za.example.sqalo.jhscanner.SplashFragment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="za.example.sqalo.jhscanner.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="za.example.sqalo.jhscanner.OcrCaptureActivity"
+            android:label="Scan Best Before / Exp Date" />
+
+        <activity android:name="za.example.sqalo.jhscanner.ReminderEditActivity" />
+        <activity android:name="za.example.sqalo.jhscanner.ScanBarcode" />
+
+        <activity android:name="za.example.sqalo.jhscanner.MainActivitySms"/>
+
+
+
+        <service
+            android:name="za.example.sqalo.jhscanner.SensorService"
+            android:enabled="true" >
+        </service>
+        <receiver
+            android:name="za.example.sqalo.jhscanner.SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="za.example.sqalo.jhscanner.RestartSensor"/>
+            </intent-filter>
+        </receiver>
+        <!-- Will not be called unless the application explicitly enables it -->
+
+        <receiver android:name="za.example.sqalo.jhscanner.AlarmReceiverAutoStart" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD0Z9ajU7AVJyfjxgWhQH28adr9WumtOEM"/>
+
+
+    </application>
+
+</manifest>

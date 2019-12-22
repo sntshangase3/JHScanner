@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:scaleType="centerCrop"
+    android:id="@+id/homepage"
+android:background="@color/colorWhite"
+
+    >
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/btndescription4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+    >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headerrelative">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/logos"
+                android:layout_marginLeft="6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                />
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:src="@drawable/profilephoto"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+
+              />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+
+            android:layout_toEndOf="@+id/headerrelative"
+            >
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/truck"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:id="@+id/myoders"
+                android:background="@color/colorWhite"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorRed"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+              android:text="2"
+                android:id="@+id/txtorderno"
+
+                />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/drop"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="46dp"
+                android:scaleType="fitXY"
+                android:id="@+id/create_bundle"
+                android:background="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layorderdot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+android:layout_below="@+id/btndescription4"
+        android:layout_centerHorizontal="true"
+  android:layout_marginTop="100dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orderdot"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/laycreate"
+        android:layout_below="@+id/layorderdot"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="15"
+            android:id="@+id/txtbundleno"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text=" Bundles waiting for you"
+
+
+            />
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_order_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Now"
+            android:textColor="@color/colorWhite"
+android:layout_above="@+id/terms"
+            android:layout_centerHorizontal="true"
+           android:padding="10dp"
+            android:textStyle="bold"
+          android:layout_marginBottom="50dp"
+            android:background="@drawable/button_bground_receive"
+
+            />
+
+
+
+<TextView
+    android:id="@+id/terms"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:clickable="true"
+    android:textStyle="bold"
+    android:textColor="@color/colorPrimaryDark"
+    android:textAlignment="center"
+    android:text="Delivery Terms"
+    android:layout_centerHorizontal="true"
+
+    />
+
+
+
+
+
+
+
+</RelativeLayout>

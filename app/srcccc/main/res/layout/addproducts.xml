@@ -1,0 +1,696 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/layoutaddproduct"
+    android:orientation="vertical"
+   >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Details"
+        android:layout_marginTop="1dp"
+        android:typeface="sans"
+        android:textSize="20sp"
+        android:textColor="@color/colorGreen"
+        android:gravity="center" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+          android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_gravity="center">
+
+
+            <Button
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:text="Scan Barcode/Date"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_scan_bestbeforedate"
+                android:background="@drawable/button_bground"
+                />
+            <Button
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:text="Search Product"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_search_product"
+                android:background="@drawable/button_bground"
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Best Before"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:hint="2019-03-21"
+            android:textAlignment="center"
+              android:layout_marginTop="1dp"
+            android:id="@+id/edtbestbeforedate" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Barcode"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:layout_marginTop="1dp"
+                android:id="@+id/edtbarcode" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtname" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtproductid" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtuserid" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:inputType="number"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtproductCategory" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtretailerName" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Description"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:isScrollContainer="true"
+
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:id="@+id/edtdescription" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Website"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:isScrollContainer="true"
+
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:id="@+id/edtweb" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Category"
+                />
+
+            <Spinner
+                android:id="@+id/spinnercategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="15dp"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Expiry Status"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:isScrollContainer="true"
+            android:editable="false"
+
+            android:hint="Item not scanned"
+                       android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+
+            android:id="@+id/edtbestbeforeStatus" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Storage"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:isScrollContainer="true"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:id="@+id/edtstorage" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Size"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:background="@drawable/edittext_bground"
+            android:padding="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/edtsize"
+
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Notify me(Days)"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:id="@+id/edtnotifydays"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Price: R"
+                />
+
+            <EditText
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:hint="Enter Price"
+                android:layout_marginTop="1dp"
+                android:textAlignment="center"
+                android:id="@+id/edtprice" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Bulk"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorPrimary"
+                 android:padding="5dp"
+                android:id="@+id/chkisbulk" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/layoutbulk"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Items per Bulk"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:inputType="number"
+                android:hint="Number of tems in 1 Bulk"
+                android:layout_marginTop="1dp"
+                android:textAlignment="center"
+                android:id="@+id/edtquantityperbulk"
+                />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Quantity"
+            />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="#5d5d5d"
+        android:background="@drawable/edittext_bground"
+        android:padding="5dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/edtquantity"
+        android:textAlignment="center"
+        />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/layoutbulktotalquantity"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Total Quantity"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:editable="false"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:textAlignment="center"
+                android:id="@+id/edtquantitybulktotal"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/layoutreorderpoint"
+            >
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Reorder Point"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:inputType="number"
+                android:layout_marginTop="1dp"
+                android:textAlignment="center"
+                android:id="@+id/edtreorderpoint"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Total Item Value"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#5d5d5d"
+                android:editable="false"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:layout_marginTop="1dp"
+                android:id="@+id/edttotal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                 android:padding="5dp"
+                android:text="Item for Shopping list"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorPrimary"
+android:checked="true"
+                android:padding="5dp"
+                android:id="@+id/chkisshopping" />
+            <EditText
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:isScrollContainer="true"
+                android:text="Yes"
+                android:editable="false"
+                android:textColor="#5d5d5d"
+                android:background="@drawable/edittext_bground"
+                android:padding="5dp"
+                android:id="@+id/edtisscanned" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Retailer"
+            />
+        <Spinner
+            android:id="@+id/spinnerretailer"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="1dp"
+            android:textColor="#5d5d5d"
+
+            android:background="@drawable/edittext_bground"
+            android:padding="1dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Product Image"
+            />
+        <Button
+            android:layout_marginTop="1dp"
+            android:layout_width="110sp"
+            android:layout_height="30sp"
+            android:text="SCAN IMAGE"
+            android:id="@+id/btn_scan_image"
+            android:background="@drawable/button_bground"
+            />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:id="@+id/productimage"
+                android:src="@drawable/profilephoto"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/layoutuserbutton"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/btn_add_mylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+          android:src="@drawable/add"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+          />
+
+
+        <ImageButton
+            android:id="@+id/btn_update_mylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/accept"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            />
+        <ImageButton
+            android:id="@+id/btn_remove_mylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/remove"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/layouthome"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtselect"
+                android:text="Home"
+                android:layout_marginTop="1dp"
+                android:typeface="sans"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/schedule"
+                android:padding="5dp"
+                android:id="@+id/donestatus"
+                android:background="@color/colorWhite"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

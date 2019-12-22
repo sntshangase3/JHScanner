@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:scaleType="centerCrop"
+    android:id="@+id/homepage"
+    android:background="@drawable/home_background_chef"
+
+    >
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/btndescription4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+         android:gravity="center"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+    >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            >
+
+
+
+            <ImageView
+                android:id="@+id/cheflist"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/chefhat1"
+
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+             >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+    android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:id="@+id/b1"
+            android:src="@drawable/dish"
+           />
+        <Spinner
+            android:id="@+id/spinnercategory"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/looking"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple tap dish icon and key in ingredients that you have in your grocery inventory list, we will process delicious and effortless ideas for you."
+            android:typeface="sans"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/listitem_text"
+            android:textColor="@color/colorWhite"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

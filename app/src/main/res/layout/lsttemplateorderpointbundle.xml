@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/relativeorder"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/lblproimage"
+        android:layout_below="@id/lblname"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblname"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Salad Busket"
+       android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toEndOf="@+id/lblproimage" />
+    <TextView
+        android:id="@+id/lblqty"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="10 Left"
+
+        android:textColor="@color/colorRed"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/lblname" />
+
+    <TextView
+        android:id="@+id/lblprice"
+        android:text="R230,20"
+        android:textSize="18sp"
+        android:padding="3dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+     android:layout_marginLeft="100dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_bground_login3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+       />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/layoutaddproduct"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:weightSum="3">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="My Grocery  "
+            android:gravity="center"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:id="@+id/txtback"
+            android:layout_gravity="left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Members Allergens"
+                  android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:id="@+id/productimage"
+            android:src="@drawable/profilephoto"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allergens: "
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intolerance: "
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txtproductname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutmemberdetails"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        >
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/previous"
+                    android:layout_height="match_parent"
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/previous"
+                    />
+                <ImageView
+                    android:id="@+id/memberprofileImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_height="match_parent"
+                    android:layout_width="40dp"
+                    android:src="@drawable/next"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:id="@+id/layoutdetails">
+
+            <TextView
+                android:id="@+id/txtmembername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Allergens: "
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/txtmemberallallergies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intolerance: "
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/txtintolerance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_select_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:src="@drawable/select" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

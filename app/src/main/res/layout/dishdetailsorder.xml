@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/homepage"
+        android:background="#ffffff"
+android:layout_marginTop="20dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="100dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:id="@+id/b1"
+                android:src="@drawable/dish"
+                />
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginRight="40dp"
+                android:id="@+id/chefprofileImage"
+                android:src="@drawable/profilephoto"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_marginRight="40dp"
+                android:id="@+id/callno"
+                android:src="@drawable/callno"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:typeface="sans"
+                android:id="@+id/txtname"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/colorPrimary"
+
+                android:textStyle="bold"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdistance"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="20dp"
+                android:typeface="sans"
+
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtaddress"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="35dp"
+                 android:typeface="sans"
+              android:visibility="gone"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/share"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdishname"
+                android:typeface="sans"
+
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtingredient"
+                android:typeface="sans"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/prep_time"
+
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:id="@+id/txtestimatecookingtime"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cost"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+
+                android:textStyle="bold"
+                android:id="@+id/txtestimateprice"
+                android:gravity="center" />
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/map_search"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:text="Go/Drive"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:weightSum="3"
+            >
+
+            <Button
+                android:id="@+id/btn_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/button_bground"
+                android:text="Accept" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:text="Postpone"
+                android:textColor="#FFA500"
+                android:id="@+id/btn_postpone"
+                android:layout_weight="1"
+                android:background="@drawable/button_bground"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:text="Decline"
+android:textColor="@color/colorRed"
+                android:id="@+id/btn_decline"
+                android:layout_weight="1"
+                android:background="@drawable/button_bground"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

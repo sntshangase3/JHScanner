@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Inventory"
+            android:layout_marginTop="1dp"
+            android:typeface="sans"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGreen"
+            android:gravity="center" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/filter_category"
+            android:padding="5dp"
+            android:id="@+id/filtercategory"
+            android:background="@color/colorWhite"
+            />
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/button_bground"
+            android:text="Find Dish" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/schedule"
+           android:layout_marginLeft="20dp"
+            android:id="@+id/donestatus"
+            android:background="@color/colorWhite"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/filter_status"
+            android:padding="5dp"
+            android:id="@+id/filterstatus"
+            android:visibility="gone"
+            android:background="@color/colorWhite"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/filter_shopping"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/filtershopping"
+            android:background="@color/colorWhite"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/filter_returnorderpoint"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:id="@+id/filterreturnorderpoint"
+            android:background="@color/colorWhite"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <Spinner
+            android:id="@+id/spinnercategory"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/layoutlistgross"
+                          >
+
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                android:gravity="center"
+                                >
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Loading please wait..."
+                                    android:layout_marginTop="1dp"
+                                    android:typeface="sans"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    android:id="@+id/total"
+                                    android:textColor="@color/colorGreen"
+                                    android:gravity="center" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/selecttxt"
+                                    android:text="Select ingredients, then Schedule:"
+                                    android:layout_marginTop="1dp"
+                                    android:visibility="gone"
+                                    android:typeface="sans"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorRed"
+                                    android:gravity="center" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                >
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Schedule"
+                                    android:id="@+id/btn_schedule"
+                                    android:textColor="@color/colorRed"
+                                    android:layout_marginTop="1dp"
+                                    android:visibility="gone"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/button_bground_premium"
+                                    />
+                            </LinearLayout>
+
+
+
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                 android:background="@color/colorWhite"
+                               android:layout_gravity="center"
+
+                                >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Item"
+                                    android:gravity="center"
+                                    android:layout_weight="10"
+                                    android:textColor="@color/colorBlack"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Name"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="10"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="QTY"
+                                    android:textColor="@color/colorBlack"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="10"
+                                    />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorBlack"
+                                    android:textStyle="bold"
+                                    android:text="Status"
+                                    android:gravity="center"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="10"
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Retailer"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorBlack"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_weight="10"
+                                    />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/layoutlist"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                >
+                                <ListView
+
+                                    android:id="@+id/lstgross"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:divider="@color/colorWhite"
+
+                                 android:padding="1dp"
+                                    android:dividerHeight="4dp"
+                                    android:layout_weight="1"
+                                    >
+                                </ListView>
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dishlist"
+        android:visibility="gone"
+        >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:gravity="center"
+                android:layout_weight="10"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_weight="10"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="KEY"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="15"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Recipe"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="15"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            >
+            <ListView
+
+                android:id="@+id/lstdish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:divider="@color/colorWhite"
+                android:padding="1dp"
+                android:dividerHeight="4dp"
+                android:layout_weight="1"
+                >
+            </ListView>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

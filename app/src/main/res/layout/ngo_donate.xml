@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+	xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@color/colorWhite"
+	>
+
+	<LinearLayout	
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Donation Pointer - Confirm"
+			android:layout_marginTop="10dp"
+			android:typeface="sans"
+			android:textSize="20sp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textColor="@color/colorWhite"
+			android:background="@drawable/button_bground_profile_premium"
+			/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Confirm Donation Date"
+			android:layout_marginTop="10dp"
+			android:typeface="sans"
+			android:textSize="18sp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textColor="@color/colorPrimary"
+
+			/>
+		<Button
+			android:id="@+id/reminder_date"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_margin="5dp"
+			android:text="@string/date"
+		  android:background="@drawable/button_bground"
+			android:textColor="#009111"
+			/>
+
+		<ImageView
+			android:id="@+id/imgLogo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:src="@drawable/help"
+		android:layout_gravity="center"
+			android:layout_marginTop="6dp"
+			android:layout_alignParentBottom="false"
+			android:layout_alignParentTop="true" />
+
+
+		<Button
+                android:id="@+id/confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Confirm Donation"
+                android:textSize="16sp"
+			android:background="@drawable/button_bground"
+			android:textColor="#009111"
+
+                />
+
+	</LinearLayout>
+</ScrollView>

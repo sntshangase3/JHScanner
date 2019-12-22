@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Terms and Conditions"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. Ordering"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.1 Any contract for the supply of Food Delivery from this platform is between you and GoingDots App and the Participating Retailer/supply as indicated; for the supply of Goods or Services from this platform any contact is between you and GoingDots App. You agree to take particular care when providing us with your details and warrant that these details are accurate and complete at the time of ordering. You also warrant that the credit or debit card details that you provide are for your own credit or debit card and that you have sufficient funds to make the payment."
+                 android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                 android:text="5.2 You can pay by credit card or debit card or net banking at the time of booking an order or you can pay by credit or debit card or cash at the time of delivery. Payment method will be indicated accordingly."
+                   android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+               android:text="5.3 Food Delivery, Goods and Services purchased from this platform are intended for your use only and you warrant that any Goods purchased by you are not for resale and that you are acting as principal only and not as agent for another party when receiving the Services."
+                  android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.4 Please note that some of our Goods may be suitable for certain age ranges only. You should check that the product you are ordering is suitable for the intended recipient."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.5 When ordering from this platform you may be required to provide an e-mail address and password. You must ensure that you keep the combination of these details secure and do not provide this information to a third party."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.6 We will take all reasonable care, in so far as it is in our power to do so, to keep the details of your order and payment secure, but in the absence of negligence on our part we cannot be held liable for any loss you may suffer if a third party procures unauthorized access to any data you provide when accessing or ordering from the platform."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.7 Any order that you place with us is subject to product availability, delivery capacity and acceptance by us and the Participating Retailers/suppliers. When you place your order online, we will send you confirmation that we have received it. This confirmation will be produced automatically so that you have confirmation of your order details. You must inform us immediately if any details are incorrect. The fact that you receive an automatic confirmation does not necessarily mean that either we or the Participating Retailers will be able to fill your order. Once we have sent the confirmation email we will check availability and delivery capacity."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.8 If the ordered Food Delivery and delivery capacity is available, the Participating Retailer/supplier will accept the contract and confirm it to GoingDots App. If the details of the order are correct, the contract for the Food Delivery, Goods or Services will be confirmed on the platform."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.9 The confirmation message will specify delivery details including the approximate delivery time specified and confirm the price of the Food Delivery, Goods and Services ordered."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.10 If the Food Delivery and/or Goods are not available or if there is no delivery capacity, we will also let you know by message confirmation on the platform or phone call."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. Delivery"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.1 Delivery period quoted at the time of ordering are approximate only and may vary. Food will be delivered to the address as intimated by you while ordering."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.2 If the Food is not delivered within the estimated delivery time quoted, User shall contact GoingDots by email or support number and GoingDots will try to ensure that you receive your order as quickly as reasonably possible."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.3 All risk in the Food and Food Delivery shall pass to you upon delivery."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.4 If you fail to accept delivery of Food at the time they are ready for delivery or GoingDots is unable to deliver at the nominated time due to your failure to provide appropriate instructions or authorizations, then the Food shall be deemed to have been delivered to you and all risk and responsibility in relation to such Food shall pass to you. Any storage, insurance and other costs which GoingDots incur as a result of the inability to deliver shall be your responsibility and you shall indemnify GoingDots in full for such cost."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.5 You must understand and accept that it might not be possible to deliver for some locations. In such cases, GoingDots will inform you accordingly and arrange for cancellation of the order or delivery to any alternative delivery address."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6.6 If you or your nominee fails to accepted or received the Food or respond to our delivery partner or telephone calls, within 10 minutes after the estimated delivery time, GoingDots may dispose of the Food in any manner which it deems fit and you will remain liable for payment of the Food.  The delivery partner is only responsible for the delivery of the Food to the Delivery Address. The delivery arrives at the Delivery Address and you fail to open the door or respond to its telephone calls within 10 minutes, the delivery partner may leave the premises, taking the Food with it, and you will remain liable for payment of all order charges.  If you are not able to be present at the Delivery Address to accept delivery of the Food, it is your responsibility to arrange for someone else to accept the delivery at such address and pay for the order on your behalf if payment has not yet been made.  Neither GoingDots nor the delivery partner is responsible for any loss or unauthorised consumption of Food, after the delivery partner has delivered the Food to the Delivery Address.  "
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. Cancellations and Refunds"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.1 You must notify GoingDots immediately if you decide to cancel your order, preferably by phone, and quote your order number. If GoingDots accepts your cancellation, no cancellation fee applies. If the GoingDots refuses cancellation, e.g. because preparation of Food Delivery has been completed and/or delivery personnel has already been dispatched, it may not be cancelled. We will not be able to refund any order, which has been already dispatched."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.2 We may cancel a contract if the product is not available for any reason. We will notify you if this is the case and return any payment that you have made;"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.3 If the cancellation was made in time and once GoingDots has accepted your cancellation, we will refund or re-credit your debit or credit card with the full amount within 14 days, which includes the initial delivery charge (where applicable) which you paid for the delivery of the Goods or the Services, as applicable."
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.4 In the unlikely event that GoingDots or Delivery partner delivers a wrong item, you have the right to reject the delivery of the wrong item and you shall be fully refunded for the missing item. If GoingDots can only do a partial delivery (a few items might be not available), its staff should inform you or propose a replacement for missing items. You have the right to refuse a partial order before delivery and get a refund. We are not responsible for wrong or partial delivery. "
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.5 Certain conditions and exemptions apply: No returns will be accepted if - Goods have been altered in any way; and There is a health risk attached, Due to public and food safety regulations."
+                    android:layout_marginTop="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thank You For Understanding, Looking Forward To Healthy Service Relationship."
+                  android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By GoingDots Management."
+                  android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorBlue"
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtback"
+                    />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

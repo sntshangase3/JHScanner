@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                          >
+
+
+
+
+
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="The Kitchen - Once Off Schedule"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:typeface="sans"
+                                    android:textSize="20sp"
+                                    android:layout_margin="5dp"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorWhite"
+                                    android:background="@drawable/button_bground_profile_premium"
+                                    />
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="vertical"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/selecttxt"
+                                        android:text="Tap Request to view:"
+                                        android:layout_marginTop="1dp"
+android:layout_gravity="center"
+                                        android:typeface="sans"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorRed"
+                                        android:gravity="center" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center">
+
+                                    <TextView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:textColor="#FFA500"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textAlignment="center"
+                                               android:background="@drawable/status_prime_notice_home"
+                                        android:id="@+id/cook"
+
+                                        />
+
+                                    <Button
+                                        android:id="@+id/cooking"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_margin="3dp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:text="Cooking Request"
+                                        android:background="@drawable/button_bground"
+                                        android:textColor="#009111"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center">
+
+                                    <TextView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:textColor="#FFA500"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textAlignment="center"
+                                        android:background="@drawable/status_prime_notice_home"
+                                        android:id="@+id/quarantin"
+
+                                        />
+
+                                    <Button
+                                        android:id="@+id/quarantine"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_margin="3dp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:text="Quarantine Request"
+                                        android:background="@drawable/button_bground"
+                                        android:textColor="#009111"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center">
+
+                                    <TextView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:textColor="#FFA500"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textAlignment="center"
+                                        android:background="@drawable/status_prime_notice_home"
+                                        android:id="@+id/dispose"
+
+                                        />
+
+                                    <Button
+                                        android:id="@+id/disposal"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_margin="3dp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:text="Disposal Request"
+                                        android:background="@drawable/button_bground"
+                                        android:textColor="#009111"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center">
+
+                                    <TextView
+                                        android:layout_width="35dp"
+                                        android:layout_height="35dp"
+                                        android:textColor="#FFA500"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textAlignment="center"
+                                        android:background="@drawable/status_prime_notice_home"
+                                        android:id="@+id/donate"
+
+                                        />
+
+                                    <Button
+                                        android:id="@+id/donation"
+                                        android:layout_height="wrap_content"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="1dp"
+                                        android:layout_margin="3dp"
+                                        android:padding="5dp"
+                                        android:textStyle="bold"
+                                        android:text="Donation Request"
+                                        android:background="@drawable/button_bground"
+                                        android:textColor="#009111"
+                                        />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/txtselect"
+                                        android:text="Home"
+                                        android:layout_marginTop="1dp"
+                                        android:typeface="sans"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorPrimary"
+                                        android:gravity="center" />
+                                    <ImageButton
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/schedule"
+                                        android:padding="5dp"
+                                        android:id="@+id/donestatus"
+                                        android:background="@color/colorWhite"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

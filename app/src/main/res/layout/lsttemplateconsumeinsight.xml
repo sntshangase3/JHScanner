@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:id="@+id/lblproimage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/lblconsumevalue"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/lblproimage" />
+    <TextView
+        android:id="@+id/lblexpirationc"
+        android:layout_below="@id/lblconsumevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblbreakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblconsumevalue"
+        android:layout_toEndOf="@+id/lblexpirationc"
+        android:text=" Breakfast" />
+
+    <TextView
+        android:id="@+id/lblspoilagec"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblexpirationc"
+        android:layout_toRightOf="@+id/lblexpirationc"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblspoil"
+        android:text=" Lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblbreakfast"
+        android:layout_toEndOf="@+id/lblspoilagec" />
+    <TextView
+        android:id="@+id/lblpreparationc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblspoilagec"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblprepare"
+        android:text=" Dinner/Supper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblspoil"
+        android:layout_toEndOf="@+id/lblpreparationc" />
+    <TextView
+        android:id="@+id/lblcookedc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Counts:"
+        android:textColor="@color/colorRed"
+        android:layout_below="@id/lblpreparationc"
+        android:layout_toEndOf="@+id/lblproimage" />
+
+    <TextView
+        android:id="@+id/lblcook"
+        android:text=" Snack/Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblprepare"
+        android:layout_toEndOf="@+id/lblcookedc" />
+
+
+
+
+
+
+</RelativeLayout>

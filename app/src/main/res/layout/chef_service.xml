@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+     >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap to Select Dish"
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:padding="2dp"
+            android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/dishlist"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Spinner
+                        android:id="@+id/spinnerservice"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_margin="5dp"
+                        android:textAlignment="center"
+                        android:textColor="#009111"
+                        android:background="@drawable/button_bground"
+                        android:padding="18dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Method"
+                        android:typeface="sans"
+                        android:textAlignment="center"
+                        android:padding="2dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_gravity="center"
+                        />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:id="@+id/radioGroup"
+                        android:layout_gravity="center"
+android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pick-Up  "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:id="@+id/radioButton"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deliver"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:id="@+id/radioButton2"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+                    </RadioGroup>
+                    <Button
+                        android:id="@+id/request_date"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_margin="5dp"
+                        android:text="@string/date"
+                        android:background="@drawable/button_bground"
+                        android:textColor="#009111"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:layout_gravity="center"
+
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Item"
+                        android:gravity="center"
+                        android:layout_weight="10"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="10"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="KEY"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="10"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:text="Recipe"
+                        android:gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="10"
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    >
+                    <ListView
+
+                        android:id="@+id/lstdish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/colorWhite"
+                        android:padding="1dp"
+                        android:dividerHeight="4dp"
+                        android:layout_weight="1"
+                        >
+                    </ListView>
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/request"
+                        android:padding="10dp"
+                        android:id="@+id/request"
+                        android:background="@color/colorWhite"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:scaleType="fitXY"
+            android:id="@+id/lblproductimage12"
+            android:src="@drawable/blackproduct"
+android:layout_weight="1"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Koo beans"
+            android:id="@+id/lblname"
+             android:layout_marginTop="2dp"
+
+            android:layout_weight="10"
+
+            />
+
+
+        <CheckBox
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/colorPrimary"
+            android:checked="false"
+            android:padding="1dp"
+            android:id="@+id/chkisshopping" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:id="@+id/lblproductimage"
+            android:src="@drawable/blackproduct"
+            android:layout_weight="1"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:text="R6"
+            android:gravity="center"
+            android:id="@+id/lblprice"
+            android:layout_marginTop="2dp"
+            android:layout_weight="8"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:text="6"
+            android:id="@+id/lblquantity"
+            android:layout_marginTop="2dp"
+            android:layout_weight="5"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

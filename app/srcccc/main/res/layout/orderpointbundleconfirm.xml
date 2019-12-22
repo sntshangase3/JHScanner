@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@color/colorWhite"
+	>
+
+	<LinearLayout	
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_vertical">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		android:text="Thank you for order!!"
+			android:typeface="sans"
+			android:textSize="20sp"
+			android:layout_margin="5dp"
+			android:gravity="center"
+			android:textColor="@color/colorPrimary"
+			/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Enter Delivery Address!"
+			android:typeface="sans"
+			android:textSize="20sp"
+			android:layout_margin="5dp"
+			android:background="@drawable/button_bground_login"
+			android:gravity="center"
+			android:textColor="@color/colorWhite"
+			/>
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_margin="5dp"
+			android:textColor="#5d5d5d"
+			android:textAlignment="center"
+			android:background="@drawable/edittext_bground"
+			android:padding="5dp"
+			android:hint="127 Smith St, Durban,4000, South Africa"
+			android:id="@+id/edtaddress" />
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_margin="5dp"
+			android:textColor="#5d5d5d"
+			android:textAlignment="center"
+		android:inputType="number"
+			android:background="@drawable/edittext_bground"
+			android:padding="5dp"
+			android:hint="Enter Quantity"
+			android:id="@+id/edtquantity" />
+		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center"
+		>
+		<TextView
+			android:id="@+id/edtprice"
+			android:text="How you want to pay? Order R230"
+			android:textSize="18sp"
+			android:padding="3dp"
+			android:textStyle="bold"
+			android:textAlignment="center"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/colorPrimary"
+
+			/>
+
+	</LinearLayout>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+
+			android:layout_alignParentBottom="true"
+			android:layout_gravity="center"
+			android:gravity="center"
+			>
+
+			<ImageButton
+				android:id="@+id/btn_select_action"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+
+				android:background="@color/colorWhite"
+				android:src="@drawable/selectpayment" />
+
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			>
+			<ImageButton
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:src="@drawable/truck"
+				android:padding="5dp"
+			android:scaleType="fitXY"
+				android:id="@+id/filtercategory"
+				android:background="@color/colorWhite"
+				/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+
+				android:text="Select Delivery Date and Time"
+				android:typeface="sans"
+				android:textSize="18sp"
+				android:layout_margin="5dp"
+				android:gravity="center"
+				android:textColor="@color/colorPrimary"
+
+				/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/layoutlist"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorWhite"
+			>
+			<ListView
+
+				android:id="@+id/lstgross"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:divider="@color/colorWhite"
+				android:padding="1dp"
+				android:layout_weight="1"
+				>
+			</ListView>
+
+		</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="2">
+
+		<Button
+			android:id="@+id/confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:text="Confirm"
+			android:background="@drawable/button_bground"
+			android:textColor="#009111"
+
+			/>
+		<Button
+			android:id="@+id/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:text="Cancel"
+			android:background="@drawable/button_bground"
+			android:textColor="#009111"
+
+			/>
+	</LinearLayout>
+
+
+
+
+	</LinearLayout>
+</LinearLayout>

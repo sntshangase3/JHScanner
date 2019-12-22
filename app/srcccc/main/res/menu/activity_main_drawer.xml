@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homepage"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item android:title="Features"
+            android:icon="@drawable/home"
+            >
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/addproduct"
+                        android:icon="@drawable/add_search"
+                        android:title="Add/Search Product" />
+                    <item
+                        android:id="@+id/grorequest"
+                        android:icon="@drawable/grorequest"
+                        android:title="Grocery Request" />
+                    <item
+                        android:id="@+id/grocery"
+                        android:icon="@drawable/grocery"
+                        android:title="My Grocery" />
+                    <item
+                        android:id="@+id/insight"
+                        android:icon="@drawable/groceryinsight"
+                        android:title="Grocery Insight" />
+
+                    <item
+                        android:id="@+id/kitchen"
+                        android:icon="@drawable/mypot"
+                        android:title="The Kitchen" />
+                    <item
+                        android:id="@+id/dish"
+                        android:icon="@drawable/dish"
+                        android:title="Dish Collections" />
+                    <item
+                        android:id="@+id/orderpoint"
+                        android:icon="@drawable/truck"
+                        android:title="Order Point" />
+                    <item
+                        android:id="@+id/donationpointer"
+                        android:icon="@drawable/help"
+                        android:title="Donation Pointer" />
+                    <item
+                        android:id="@+id/foodsafety"
+                        android:icon="@drawable/food_safety"
+                        android:title="Food Safety" />
+                    <item
+                        android:id="@+id/profile"
+                        android:icon="@drawable/profile"
+                        android:title="Profile" />
+                    <item
+                        android:id="@+id/contact"
+                        android:icon="@drawable/contact"
+                        android:title="Contact" />
+                    <item
+                        android:id="@+id/logout"
+                        android:icon="@drawable/logout"
+                        android:title="Logout" />
+                </group>
+            </menu>
+        </item>
+
+    </group>
+
+
+
+</menu>

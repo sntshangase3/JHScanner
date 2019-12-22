@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+android:id="@+id/lsttemplatengo"
+
+    >
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:id="@+id/lbllogoimage"
+            android:src="@drawable/blackproduct"
+android:layout_weight="1"
+            android:layout_margin="2dp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Amarula Cream 1 Litre"
+            android:id="@+id/lbldescribtion"
+             android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_weight="20"
+            android:layout_margin="2dp"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textColor="@color/colorWhite"
+            android:text="6"
+            android:id="@+id/lblquantity"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/button_bground_login2"
+            android:gravity="center"
+       android:textAlignment="center"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

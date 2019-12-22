@@ -1,0 +1,385 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Service"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                >
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The following terms and conditions govern all use of "
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="J.H. Ngobeni DigiComm (Pty)Ltd, Reg:2016/010926/07"
+android:textStyle="bold"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family of platforms and assets, including “GoingDots brand” platform/website. The platform is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, GoingDots Privacy Policy) and procedures that may be published from time to time on this Site (collectively, the Agreement)."
+                />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Website: www.goingdots.com"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: info@ngobeniholdings.co.za"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please read this Agreement carefully before accessing or using the platform. By accessing or using any part of the platform, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access the platform or use any services. If these terms and conditions are considered an offer by GoingDots, acceptance is expressly limited to these terms. The platform is available only to individuals who are at least 16 years old or adult of legally referred age. "
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Access to your GoingDotsTM  account"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If you create an account on the platform, you are responsible for maintaining the security of your account, and you are fully responsible for all activities that occur under the account and any other actions taken in connection with the account. You must not describe or assign information to your account in a misleading or unlawful manner, including in a manner intended to trade on the name or reputation of others."
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GoingDots may change, suspend or discontinue the Services at any time, including the availability of any feature, database, or content. May also impose limits on certain features and services or restrict User's access to parts or all of the Services without notice or liability. "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Use License"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a. Permission is granted to download or view materials (information or software) on GoingDotsTM platform for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not: "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    i. modify or copy the materials;"
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    ii. use the materials for any commercial purpose, or for any public display (commercial or non-commercial);"
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    iii. attempt to decompile or reverse engineer any software contained on GoingDots platform;"
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    iv. remove any copyright or other proprietary notations from the materials; or"
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    v. transfer the materials to another person or mirror the materials on any other server."
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b. This license shall automatically terminate if you violate any of these restrictions and may be terminated by GoingDots at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format. "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Limitations"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In no event shall GoingDots or its suppliers be liable for any damages (including, without limitation, damages for loss of data, quality, value or profit, or due to business interruption,) arising out of the use or inability to use the materials on the platform, even if platform authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you. "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. Fees; Payment."
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms of GoingDots features that are subscription fee prepaid service. By signing up the membership or subscription account on platform you agreed:"
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	Your membership may start with a free trial. The free trial period will be indicated to you, or as otherwise specified during sign-up and is intended to allow new members and certain former members to try the service. You will be notified during sign-up whether you are eligible for a free trial."
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	At end of free trial period unless you cancel your membership prior to the end of the free trial period, will bill you the annual subscription fees of as indicated for platform services. Payments will be charged on the day you sign up for a platform account and will cover the use of the service for an annual period as indicated. Platform membership or subscription fees are not refundable. "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. Sale of Service"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We reserve the right to sell services to 3rd Party without prior notice or given reason.
+We reserve the right to conduct trends/survey on non-personal information or data collected on the platform.
+We reserve the right to partner with 3rd party for advertising and marketing purposes on the platform.
+We reserve the right to sell partial or substantially the platform or move ownership of platform to a 3rd party without prior notice and without a given reason.
+"
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. Cancellation and Termination"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You are solely responsible for properly cancelling your account. You can cancel your account or contacting us via email (info@ngobeniholdings.co.za). ALL of your content (text and files) will be immediately deleted from the service upon cancellation. This information cannot be recovered once your account is canceled. "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8. Indemnification"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You agree to indemnify and hold harmless GoingDots, its parent company, contractors, and its licensors, and their respective directors, officers, employees and agents from and against any and all claims and expenses, including attorneys' fees, arising out of your use of the platform/Website, including but not limited to out of your violation this Agreement. "
+                    android:layout_marginTop="1dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy "
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy of J.H. Ngobeni DigiComm (Pty) Ltd, Reg:2016/010926/07 family of platforms and assets including “GoingDots brand”, Privacy is very important to us. We have developed this Privacy Policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information received from users on this platform/website, located at http://www.goingdots.com (Site). "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	We don't ask you for personal information unless we truly need it."
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	We don't share your personal information with anyone except to comply with the law, develop our products, or protect our rights."
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•	We don't store personal information on our servers unless required for the on-going operation of one of our services."
+                    android:layout_marginTop="1dp"
+                    />
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Platform Visitors"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GoingDots collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. The purpose in collecting non-personally identifying information is to better understand how platform’s visitors use its platform/website. From time to time, we may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its platform, survey and related trends. "
+                    android:layout_marginTop="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We may also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users on platform. For most users accessing the Internet from an Internet service provider the IP address will be different every time you log on. We use this data to monitor the use of the Site and of our Service, and for the Site's technical administration. We do not associate your IP address with any other personally identifiable information to identify you personally, except in case of violation of the Terms of Service. "
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use of contact information"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In addition, we may use your contact information to market to you, and provide you with information about, our products and services, including but not limited to our Service. If you decide at any time that you no longer wish to receive such information or communications from us, please follow the unsubscribe instructions provided in any of the communications."
+                    android:layout_marginTop="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cookies"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A cookie is a string of information that a website stores on a visitor's computer, and that the visitor's browser provides to the website each time the visitor returns. GoingDots uses cookies to help it identify and track visitors, their usage of platform/website, and their website access preferences.Platform visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using the platform, with the drawback that certain features of the platform may not function properly without the aid of cookies"
+                    android:layout_marginTop="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business Transfers"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If J.H. Ngobeni DigiComm (Pty)Ltd nor its  asset GoingDots brand is partial, or substantially all of its assets were acquired, or in the unlikely event that it goes out of business or enters bankruptcy, user information would be one of the assets that is transferred or acquired by a third party. You acknowledge that such transfers may occur, and that any acquiror may continue to use your personal information as set forth in this policy. "
+                    android:layout_marginTop="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private Policy Changes"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Although most changes are likely to be minor, GoingDots may change its Privacy Policy from time to time, and in J.H. Ngobeni DigiComm(Pty)Ltd's sole discretion. GoingDots encourages visitors to frequently check this page for any changes to its Privacy Policy. If you have an account, we may send you an email alerting you to the changes. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change. "
+                    android:layout_marginTop="1dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained."
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click to Signup"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorBlue"
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/status_fresh"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtback"
+                    />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
